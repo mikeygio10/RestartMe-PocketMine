@@ -18,7 +18,7 @@ class AutoBroadcastTask extends PluginTask{
     /**
      * @param int $currentTick
      */
-    public function onRun($currentTick){
+    public function onRun(int $currentTick){
         $timer = $this->plugin->getTimer();
         if(!$timer->isPaused()){
             if($timer->getTime() >= $this->plugin->getConfig()->get("startCountdown")){
