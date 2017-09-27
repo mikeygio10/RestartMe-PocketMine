@@ -18,7 +18,7 @@ class RestartServerTask extends PluginTask{
     /**
      * @param int $currentTick
      */
-    public function onRun($currentTick){
+    public function onRun(int $currentTick){
         $timer = $this->plugin->getTimer();
         if(!$timer->isPaused()){
             $timer->subtractTime(1);
